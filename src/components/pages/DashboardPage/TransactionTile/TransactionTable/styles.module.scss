@@ -1,0 +1,36 @@
+.TransactionTable {
+  margin: 2rem 3rem;
+  :global(.ant-spin-container) {
+    :global(.ant-table) {
+      :global(.ant-table-content) {
+        :global(.ant-table-thead) {
+          th {
+            border: none;
+            font-weight: 400;
+            font-size: 1.2rem;
+            &::before {
+              content: none !important;
+            }
+          }
+        }
+        :global(.ant-table-tbody) {
+          :global(.ant-table-row) {
+            &:hover {
+              :global(.ant-table-cell) {
+                background-color: rgba(255 255 255 / 0.1);
+              }
+            }
+            :global(.ant-table-cell) {
+              font-size: 1.4rem;
+              border: none;
+              padding: 2.3rem 1.6rem;
+            }
+          }
+          :global(.ant-table-placeholder) {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

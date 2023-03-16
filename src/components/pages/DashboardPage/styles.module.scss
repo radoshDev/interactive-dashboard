@@ -1,0 +1,20 @@
+.DashboardTiles {
+  display: flex;
+  gap: 9.1rem;
+  > * {
+    flex-basis: 100%;
+  }
+  .left {
+    .DashboardTotal {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 3.2rem;
+      > * {
+        flex-basis: 100%;
+      }
+    }
+  }
+  .right {
+    margin-top: 16rem;
+  }
+}

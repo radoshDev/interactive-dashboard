@@ -1,0 +1,50 @@
+.TransactionHeader {
+  display: flex;
+  align-items: flex-start;
+  .title {
+    flex: 1;
+    font-size: 2.4rem;
+  }
+  .search {
+    max-width: 212px;
+    margin-right: 1rem;
+    :global(.ant-input-affix-wrapper-focused) {
+      box-shadow: none !important;
+    }
+    :global(.ant-btn) {
+      background-color: #27264e;
+      color: #aeabd8 !important;
+    }
+  }
+  .pickerWrapper {
+    color: #aeabd8;
+    border-radius: 0.9rem;
+    position: relative;
+    max-width: 19rem;
+    & > svg {
+      position: absolute;
+      top: 50%;
+      left: 0.8rem;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+    .picker {
+      padding: 0.4rem 1rem 0.4rem 3.4rem;
+      color: #aeabd8;
+      box-shadow: none;
+      input {
+        padding: 0.666em 0;
+        color: #aeabd8;
+        &::placeholder {
+          color: #aeabd8;
+        }
+      }
+      :global(.ant-picker-suffix) {
+        color: inherit;
+      }
+      :global(.ant-picker-clear) {
+        color: inherit;
+      }
+    }
+  }
+}

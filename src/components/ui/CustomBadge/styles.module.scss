@@ -1,0 +1,17 @@
+.CustomBadge {
+  background: rgba(121, 121, 121, 0.15);
+  font-size: 1.2rem;
+  border-radius: 0.83em;
+  color: #000;
+  padding: 0.33em 1em;
+  display: inline-block;
+  align-self: flex-end;
+  &.positive {
+    background: rgba(2, 177, 90, 0.15);
+    color: #02b15a;
+  }
+  &.negative {
+    background: rgba(235, 0, 27, 0.15);
+    color: #e41414;
+  }
+}

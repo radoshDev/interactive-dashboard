@@ -1,0 +1,19 @@
+.Navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0 0 0 / 0.5);
+  & > a {
+    margin-bottom: 2.4rem;
+  }
+  .iconBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+
+    &.active {
+      color: rgba(0 0 0 / 1);
+    }
+  }
+}

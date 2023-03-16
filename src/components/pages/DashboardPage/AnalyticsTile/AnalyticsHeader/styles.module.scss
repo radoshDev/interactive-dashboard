@@ -1,0 +1,34 @@
+.AnalyticsHeader {
+  display: flex;
+  align-items: flex-start;
+  .title {
+    flex: 1;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 3.5rem;
+  }
+  .tips {
+    margin-right: 3.3rem;
+    display: flex;
+    .item {
+      display: flex;
+      align-items: center;
+      margin-left: 4.4rem;
+      .caption {
+        margin-left: 1.4rem;
+        font-weight: 600;
+      }
+    }
+  }
+  .select {
+    :global(.ant-select-selector) {
+      box-shadow: none !important;
+      input {
+        color: #8c89b4;
+      }
+      :global(.ant-select-selection-item) {
+        color: #8c89b4;
+      }
+    }
+  }
+}
