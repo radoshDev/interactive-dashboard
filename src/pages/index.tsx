@@ -1,5 +1,4 @@
 import { NextPage } from 'next'
-
 import { Transaction } from '@/types'
 import { getTransactions } from '@/services/getTransactions'
 import { ErrorMessages } from '@/constants'

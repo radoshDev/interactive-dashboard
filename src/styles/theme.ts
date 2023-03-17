@@ -20,6 +20,7 @@ export const theme: ThemeConfig = {
     Input: {
       fontSizeLG: 12,
       colorBgContainer: '#27264e',
+      colorBorder: 'transparent',
       colorText: COLORS.textPurple,
       colorTextBase: COLORS.lightPurple,
       colorTextQuaternary: COLORS.lightPurple,
@@ -41,6 +42,11 @@ export const theme: ThemeConfig = {
       colorTextQuaternary: COLORS.lightPurple,
       colorTextPlaceholder: COLORS.lightPurple,
       colorIcon: 'red',
+    },
+    Pagination: {
+      colorText: COLORS.lightPurple,
+      colorPrimary: COLORS.textPurple,
+      colorTextDisabled: COLORS.lightPurple50,
     },
   },
 }

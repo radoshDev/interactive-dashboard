@@ -74,7 +74,7 @@ const TransactionTable: FC<Props> = ({
   return (
     <Table
       rowKey="id"
-      pagination={{ hideOnSinglePage: true }}
+      pagination={{ hideOnSinglePage: true, pageSize: 3 }}
       columns={columns}
       dataSource={filteredTransactions}
       className={s.TransactionTable}

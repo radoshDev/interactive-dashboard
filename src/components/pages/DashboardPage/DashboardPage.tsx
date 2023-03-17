@@ -20,15 +20,14 @@ const DashboardPage: FC = () => {
     content = (
       <>
         <div className={s.DashboardTiles}>
-          <div className={s.left}>
-            <div className={s.DashboardTotal}>
-              <TotalTile type="outcome" />
-              <TotalTile type="income" />
-            </div>
-
+          <div className={s.DashboardTotal}>
+            <TotalTile type="income" />
+            <TotalTile type="outcome" />
+          </div>
+          <div className={s.transaction}>
             <TransactionTile />
           </div>
-          <div className={s.right}>
+          <div className={s.analytics}>
             <AnalyticsTile />
           </div>
         </div>
