@@ -46,8 +46,10 @@ const TransactionTable: FC<Props> = ({
 }) => {
   const filteredBySearchTransactions = useMemo(
     () =>
-      transactions.filter((tran) =>
-        tran.creditorName.toLowerCase().includes(searchKey)
+      transactions.filter(
+        (transaction) =>
+          transaction.creditorName.toLowerCase().includes(searchKey) ||
+          transaction.category.toLowerCase().includes(searchKey)
       ),
     [searchKey, transactions]
   )
